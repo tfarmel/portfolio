@@ -92,9 +92,6 @@
         <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
 
         </article>
-        <article class="col-md-3 col-lg-3 col-xs-12 col-sm-12 item-folio">
-
-        </article>
       </div>
     </section>
     <!-- end portfolio -->
@@ -105,13 +102,21 @@
         <hr class="separator">
         <form class="well span8">
             <div class="row">
-                <div class="span3">
-                    <label>First Name</label> <input class="span3" placeholder=
-                    "Your First Name" type="text"> <label>Last Name</label>
-                    <input class="span3" placeholder="Your Last Name" type="text">
-                    <label>Email Address</label> <input class="span3" placeholder=
-                    "Your email address" type="text"> <label>Subject</label>
-                    <select class="span3" id="subject" name="subject">
+                <div class="span3 panel-body">
+                    <div class="form-group">
+                      <label>First Name :</label>
+                      <input class="span3 form-control" placeholder="Your First Name" type="text">
+                    </div>
+                    <div class="form-group">
+                      <label>Last Name :</label>
+                      <input class="span3 form-control" placeholder="Your Last Name" type="text">
+                    </div>
+                    <div class="form-group">
+                      <label>Email Address : </label>
+                      <input class="span3 form-control" placeholder="Your email address" type="text">
+                    </div>
+                    <label>Subject : </label>
+                    <select class="span3 form-control" id="subject" name="subject">
                         <option selected value="na">
                             Choose One:
                         </option>
@@ -130,13 +135,14 @@
                     </select>
                 </div>
 
-                <div class="span5">
-                    <label>Message</label>
-                    <textarea class="input-xlarge span5" id="message" name="message"
-                    rows="10">
+                <div class="span5 form-group">
+                    <label>Message : </label>
+                    <textarea class="span5 form-control" id="message" name="message" rows="10">
                   </textarea>
-                </div><button class="btn btn-primary pull-right" type=
-                "submit">Send</button>
+                </div>
+                <div style="text-align:center;">
+                  <button class="btn btn-primary pull-right" type="submit">Send</button>
+                </div>
             </div>
         </form>
       </div>
